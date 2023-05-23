@@ -1,1 +1,1 @@
-# kv-21-mp--tech-of-programming-lab-2
+# vladich-bub
