@@ -1,24 +1,33 @@
-function china(addendA: number, addendB: number) {
+function sum(addendA: number, addendB: number) {
   return addendA + addendB;
 }
 
 function divide(dividend: number, divisor: number) {
-  return dividend / divisor; // тут я ем викортстовую паличку для ділення, щоб поділити те що передав
+  return dividend / divisor;
 }
 
 function logResult(input: string) {
-  console.log(`result -> `, a);
+  console.log("result -> ", input);
 }
 
-var a = 5;
-function multiply(multiplier: number) {
-  a = a * multiplier;
+function multiply(multiplierA: number, multiplierB: number) {
+  return multiplierA * multiplierB;
 }
 
-class student {
-  public name: string = "MyClass";
-  public age: number = 15;
+class Student {
+  private name: string | null = null;
+  private age: number | null = null;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+  public changeName(name: string) {
+    this.name = name;
+  }
+  public changeAge(age: number) {
+    this.age = age;
+  }
 }
-const instance = new student();
-instance.name = "Vlad";
-instance.age = 21;
+const instance = new Student("Vlad", 21);
+instance.changeName("Vlad");
+instance.changeAge(21);
