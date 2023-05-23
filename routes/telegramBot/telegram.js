@@ -1,7 +1,7 @@
 const config = require('../../config.js');
 const fs = require('fs').promises;
 const token = config.bot_Token;
-const user = require('../../models/user');
+const user = require('../../models/user/user.model.js');
 const TelegramBotApi = require('telegram-bot-api');
 const telegramBotApi = new TelegramBotApi({
     token: token,

@@ -4,7 +4,7 @@ const BasicStrategy = require('passport-http').BasicStrategy;
 const GoogleStrategy = require('passport-google-oauth20');
 const config = require('./config');
 const crypto = require('crypto');
-const user = require('./models/user');
+const user = require('./models/user/user.model');
 
 
 passport.serializeUser(onSerialize);

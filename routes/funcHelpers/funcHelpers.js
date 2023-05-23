@@ -1,5 +1,5 @@
 const cloudinary = require('cloudinary');
-const video = require("../../models/videos");
+const video = require("../../models/video/videos");
 cloudinary.config({cloud_name: "dlaoof6av", api_key: "367629461961258", api_secret: "aB7eI1HaXFNLAjqb3GBNOTG20KQ"});
 module.exports = {
     authentificationAll: function (req, res) {
